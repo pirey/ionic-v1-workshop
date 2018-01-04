@@ -1,0 +1,31 @@
+CHECKLIST
+
+- install nodejs (LTS) & npm (otomatis terinstall bareng nodejs)
+  - https://nodejs.org/en/ atau $ brew install node
+  - cek
+    - $ node -v
+    - $ npm -v
+
+- set npm global folder
+  - https://docs.npmjs.com/getting-started/fixing-npm-permissions#option-two-change-npms-default-directory
+
+- install ionic (3.19.0)  & cordova (6.4.0)
+  - $ npm install -g ionic cordova
+  - cek
+    - $ ionic -v
+    - $ cordova -v
+  - https://ionicframework.com/docs/v1
+
+- buat project baru
+  - $ ionic start <nama_project> blank --type ionic1
+
+- angular
+  - struktur folder
+  - module
+  - controller & template
+  - service
+  - $http
+
+- ionic
+  -
+
