@@ -1,7 +1,40 @@
 <ion-view view-title="Home">
   <ion-content>
-    <button class="anu">{{ helo }}</button>
-    <!-- The content of the page -->
-    <a href="#/music">Go to music page!</a>
+
+    <!-- <form name="formLogin" ng-submit="formLogin.$valid && submitLogin(user)" novalidate>
+      <div class="list white small-icon no-mar-bot">
+        <label class="item item-input item-stacked-label item-icon-right">
+          <span class="input-label">Username</span>
+          <input type="email" name="email" e-mail ng-model="user.username" placeholder="Masukkan username/email" required>
+          <i ng-if="formLogin.email.$valid" class="icon ion-ios-checkmark balanced"></i>
+          <i ng-if="formLogin.email.$invalid && (formLogin.email.$touched || formLogin.email.$submitted)" class="icon ion-ios-close assertive"></i>
+          <div ng-messages="formLogin.email.$error" ng-if="formLogin.email.$touched || formLogin.$submitted" ng-messages-include="templates/error-list.html"></div>
+        </label>
+      </div> -->
+
+
+
+
+     <form name="formAkun" ng-submit="formAkun.$valid && submit()" class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">First Name</span>
+        <input ng-model="akun.first" type="text" placeholder="John" required>
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Last Name</span>
+        <input ng-model="akun.last" type="text" placeholder="Suhr" required>
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Email</span>
+        <input ng-model="akun.email" type="email" placeholder="john@suhr.com" required>
+      </label>
+      <button type="submit" class="button button-block">Submit</button>
+      <button type="button" class="button button-block">Ora</button>
+    </form>
+    <ion-list>
+      <ion-item>Firstname: {{ akun.first }}</ion-item>
+      <ion-item>Last {{ akun.last }}</ion-item>
+      <ion-item>Email {{ akun.email }}</ion-item>
+    </ion-list>
   </ion-content>
 </ion-view>

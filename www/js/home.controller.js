@@ -1,4 +1,11 @@
 window.angular.module('starter')
 .controller('HomeController', function ($scope) {
-  $scope.helo = 'helo'
+  $scope.submit = function () {
+    window.alert('submit')
+  }
+  $scope.akun = {
+    first: '',
+    last: '',
+    email: ''
+  }
 })
